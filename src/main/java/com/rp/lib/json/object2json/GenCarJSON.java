@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class GenCarJSON {
 
-    public static void main(String args[]) throws IOException {
+    public static void main(String[] args) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         Car car = new Car("yellow","renault");
         objectMapper.writeValue(new File("target/car.json"),car);
