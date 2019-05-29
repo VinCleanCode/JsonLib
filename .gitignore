@@ -124,3 +124,6 @@ buildNumber.properties
 
 ### SVN ###
 .svn/
+/.idea/*.xml
+/.idea/libraries/*.xml
+/*.iml
