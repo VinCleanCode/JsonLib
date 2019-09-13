@@ -11,7 +11,7 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="com.rp.lib" level="info"/>
+        <Logger name="com.rp.lib.json" level="info"/>
         <Root level="info">
             <AppenderRef ref="STDOUT"/>
             <AppenderRef ref="FILE"/>

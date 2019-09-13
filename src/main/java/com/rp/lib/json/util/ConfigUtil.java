@@ -8,12 +8,14 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import static org.apache.logging.log4j.core.util.Loader.getClassLoader;
+
 public class ConfigUtil {
 
     public static Map readConfig(String fileName) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
 
-        File configFile = new File(GenConfig.class.getClassLoader().getResource(fileName).getFile());
+        File configFile = new File(getClassLoader().getResource(fileName).getFile());
         HashMap configMap = objectMapper.readValue(configFile, HashMap.class);
 
         return configMap;

@@ -1,4 +1,7 @@
 {
   "zkHost": "127.0.0.1:2181",
-  "collection": "store"
+  "collection": "store",
+  "intArray": [1,2,3],
+  "stringArray": ["a","b","c"],
+  "hybrid": ["a",1]
 }

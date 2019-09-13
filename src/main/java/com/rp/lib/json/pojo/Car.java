@@ -1,6 +1,10 @@
 package com.rp.lib.json.pojo;
 
 public class Car {
+
+    public Car(){
+    }
+
     public String getColor() {
         return color;
     }
